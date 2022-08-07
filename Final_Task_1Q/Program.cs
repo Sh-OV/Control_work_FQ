@@ -19,6 +19,7 @@ Console.Write("  ->  ");
 
 string[] SelectArray(string[] array)        // метод выбора элементов входного массива по условию (путем создания нового массива)
 {
+    int quantity = 3;
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
@@ -28,7 +29,7 @@ string[] SelectArray(string[] array)        // метод выбора элем�
     int k = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i].Length <= 3)
+        if (array[i].Length <= quantity)
         {
             selectarray[k] = array[i];
             k++;
