@@ -5,7 +5,7 @@ string[] UserArray()                    // метод получения стр�
     Console.Write("Введите количество элементов строкового массива: ");
     int count = Convert.ToInt32(Console.ReadLine());
     string[] userarray = new string[count];
-    Console.Write($"Введите {count} элементов текста (через Enter): ");
+    Console.WriteLine($"Введите {count} элементов текста (через Enter): ");
     for (int i = 0; i < userarray.Length; i++)
     {
         userarray[i] = Console.ReadLine();
@@ -50,4 +50,5 @@ void PrintArr(string[] res)  // метод вывода строкового о�
     }
 }
 PrintArr(sarray);
+Console.WriteLine();
 Console.WriteLine();
