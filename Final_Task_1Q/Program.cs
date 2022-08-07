@@ -1,14 +1,14 @@
 ﻿// Условия итоговой задачи за 1 четверть читай в файле README.md
-//Console.Clear();
+Console.Clear();
 string[] UserArray()                    // метод получения строкового массива от пользователя
 {
     Console.Write("Введите количество элементов строкового массива: ");
     int count = Convert.ToInt32(Console.ReadLine());
-    string[] userarray = new string [count];
+    string[] userarray = new string[count];
     Console.Write($"Введите {count} элементов текста (через Enter): ");
     for (int i = 0; i < userarray.Length; i++)
     {
-            userarray[i] = Console.ReadLine();
+        userarray[i] = Console.ReadLine();
     }
     return userarray;
 }
@@ -24,11 +24,11 @@ string[] SelectArray(string[] array)        // метод выбора элем�
     {
         if (array[i].Length <= 3) count++;
     }
-    string[] selectarray = new string [count];
+    string[] selectarray = new string[count];
     int k = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i].Length <= 3) 
+        if (array[i].Length <= 3)
         {
             selectarray[k] = array[i];
             k++;
@@ -39,12 +39,12 @@ string[] SelectArray(string[] array)        // метод выбора элем�
 }
 string[] sarray = SelectArray(uarray);
 
-void PrintArr (string[] res)  // метод вывода строкового одномерного массива на печать
+void PrintArr(string[] res)  // метод вывода строкового одномерного массива на печать
 {
     for (int i = 0; i < res.Length; i++)
     {
         if (i == 0) Console.Write($"[");
-        if ( i < res.Length-1) Console.Write($"{res[i]}, ");
+        if (i < res.Length - 1) Console.Write($"{res[i]}, ");
         else Console.Write($"{res[i]}]");
     }
 }
